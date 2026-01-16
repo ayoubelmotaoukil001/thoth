@@ -1,5 +1,7 @@
 <?php
 
+namespace app\core;
+
 class Auth
 {
     public static function login($studentId, $studentData)
