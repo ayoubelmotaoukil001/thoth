@@ -1,5 +1,6 @@
 <?php
-namespace app\core ;
+
+namespace app\core;
 
 class Controller
 {
@@ -7,7 +8,7 @@ class Controller
     {
         extract($data);
         
-        $viewFile = __DIR__ . '/../views/' . $view . '.php';
+        $viewFile = __DIR__ . '/../view/' . $view . '.php';
         
         if (file_exists($viewFile)) {
             require_once $viewFile;
